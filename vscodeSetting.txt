@@ -1,0 +1,25 @@
+// 将设置放入此文件中以覆盖默认设置
+{
+    "typescript.validate.enable": false,
+    // 启用/禁用 JavaScript 验证
+    "javascript.validate.enable": false,
+    // 控制已更新文件的自动保存。接受的值:“off”、“afterDelay”、“onFocusChange”。如果设置为“afterDelay”，则可在 "files.autoSaveDelay" 中配置延迟。
+    "files.autoSave": "afterDelay",
+    // 控制延迟(以秒为单位)，在该延迟后将自动保存更新后的文件。仅在 "files.autoSave" 设置为“afterDelay”时适用。
+    "files.autoSaveDelay": 1200,
+    // 一个制表符等于的空格数。
+    "editor.tabSize": 2,
+    "editor.fontSize": 15,
+    // An array with rgba strings which are used as colors.
+    "indentRainbow.colors": [
+        "rgba(64,64,16,0.2)",
+        "rgba(32,64,32,0.2)",
+        "rgba(64,32,64,0.2)",
+        "rgba(16,48,48,0.2)",
+        "rgba(128,32,32,0.2)"
+    ],
+    // 控制除了 "Tab" 以外，是否还应在 "Enter" 时接受建议。帮助避免“插入新行”或“接受建议”之间的歧义。
+    "editor.acceptSuggestionOnEnter": false,
+
+    "files.eol": "\n"
+}
