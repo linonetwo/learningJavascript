@@ -23,7 +23,7 @@
   },
   "betterScripts": {
     "test": {
-      "command": "node ./node_modules/mocha/bin/mocha -s 250 -c __test__/* --compilers js:babel-core/register --watch",
+      "command": "node ./node_modules/mocha/bin/mocha -s 250 -c __test__/* --compilers js:babel-core/register --require babel-polyfill --watch",
       "env": {}
     }
   },
