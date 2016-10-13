@@ -16,6 +16,7 @@
   "main": "bin/server.js",
   "scripts": {
     "start": "babel-node ./Longitude/index.js",
+    "crawl": "babel-node ./Crawler/index.js",
     "lint-fix": "eslint -c .eslintrc src api --fix",
     "lint": "eslint -c .eslintrc src api",
     "test": "karma start",
@@ -23,7 +24,7 @@
   },
   "betterScripts": {
     "test": {
-      "command": "node ./node_modules/mocha/bin/mocha -s 250 -c __test__/* --compilers js:babel-core/register --watch",
+      "command": "node ./node_modules/mocha/bin/mocha -s 250 -c __test__/* --compilers js:babel-core/register --require babel-polyfill --watch",
       "env": {}
     }
   },
@@ -40,8 +41,13 @@
     "babel-preset-stage-0": "^6.3.13",
     "babel-register": "^6.3.13",
     "babel-runtime": "^6.3.19",
+    "cheerio": "^0.22.0",
+    "fs-transaction": "^1.0.9",
+    "lodash": "^4.16.4",
+    "node-fetch": "^1.6.3",
     "node-uuid": "^1.4.7",
-    "pretty-error": "^2.0.0"
+    "pretty-error": "^2.0.0",
+    "when": "^3.7.7"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
